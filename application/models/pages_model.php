@@ -9,10 +9,10 @@ class Pages_model extends CI_Model
 
    public function get_page($page)
    {
-      if (get_file_info('./pages/'.$page.'.html') === FALSE)
+      if (get_file_info('./content/pages/'.$page.'.html') === FALSE)
          return false;
       else
-         return nl2br(read_file('./pages/'.$page.'.html'));
+         return nl2br(read_file('./content/pages/'.$page.'.html'));
    }
 }
 ?>
