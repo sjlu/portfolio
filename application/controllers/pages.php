@@ -18,7 +18,9 @@ class Pages extends CI_Controller
       $data = array();
       $data['content'] = $this->pages_model->get_page($page); 
 
-      if ($data['content'] === FALSE)
+      if ($data['content'] === FALSE && $page == 'index')
+         $data['content'] = '';
+      else if ($data['content'] === FALSE)
          show_404();
 
       $this->load->view("include/header");
