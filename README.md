@@ -19,6 +19,23 @@ Simply install this into a web directory onto your web server. No other installa
 Content
 -------
 
+### Modifying the header
+`/content/header.json`
+
+You can edit the meta tags by editing what exists in the file. The three keys are `meta_desc, meta_keywords, and title` in the format like below
+
+Example:
+
+    {
+        "meta_desc":"This is a website about a guy",
+        "meta_keywords":"portfolio someone keyword3",
+        "title":"Your Name"
+    }
+
+`/content/header.png`
+
+If you want a title above the menu bar, just make sure this file is filled in. Something within 250px by 50px (width x height).
+
 ### Adding links
 `/content/links.json`
 

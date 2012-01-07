@@ -1,5 +1,7 @@
 <div class="header_img">
-   <img src="<?= base_url('images/header.png'); ?>" height="40" width="248"/>
+   <?php if (get_title()): ?>
+      <img src="<?= base_url('content/header.png'); ?>" />
+   <?php endif; ?>
 </div>
 
 <?php $active = get_active(); ?>

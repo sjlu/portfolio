@@ -42,4 +42,11 @@ function get_links()
    return $return;
 }
 
+function get_title()
+{
+   if (read_file('./content/header.png') === FALSE)
+      return false;
+   else
+      return true;
+}
 ?>
