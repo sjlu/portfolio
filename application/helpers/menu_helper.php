@@ -35,7 +35,7 @@ function get_pages()
 function get_links()
 {
    $return = array();
-   $link_json = read_file('./links.json');
+   $link_json = read_file('./content/links.json');
    foreach (json_decode($link_json, TRUE) as $title => $url) // true param makes sure its an assoc. array
       $return[] = array('title' => $title, 'url' => $url);
 
