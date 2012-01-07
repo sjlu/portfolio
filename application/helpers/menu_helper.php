@@ -18,7 +18,7 @@ function get_active()
 function get_pages()
 {
    $return = array();
-   $dir_listing = get_filenames('pages/'); // this is a code igniter function
+   $dir_listing = get_filenames('/content/pages/'); // this is a code igniter function
    foreach ($dir_listing as $filename)
    {
       if ($filename == 'index.html') continue;
