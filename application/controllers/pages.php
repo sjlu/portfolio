@@ -22,6 +22,7 @@ class Pages extends CI_Controller
          show_404();
 
       $this->load->view("include/header");
+      $this->load->view("include/menu");
       $this->load->view("pages", $data);
       $this->load->view("include/footer");
    }
