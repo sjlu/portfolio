@@ -18,3 +18,26 @@ Simply install this into a web directory onto your web server. No other installa
 
 Content
 -------
+
+### Adding links
+`/content/links.json`
+
+This file should be in proper JSON format, where it should have `"title":"link"` keypair.
+
+Example:
+
+	{
+		"title 1":"http://url1",
+		"title 2":"https://url2"
+	}
+	
+### Adding pages
+`/content/pages/`
+
+This is a directory that contains HTML files that will automatically be included in the header. When a link is clicked, it will be included into the page and will accept all HTML syntax.
+
+For example if you have `/content/pages/about.html` will have a link on your site as **About**. `/content/pages/index.html` is a required page or will not render.
+
+### Modifying the styles
+
+All you need to do is modify `style.css` to change any of the colors or anything else. Modify `/application/view/` files to change anything else you want, the code is well commented.
