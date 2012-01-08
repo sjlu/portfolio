@@ -1,3 +1,4 @@
+/* Generic CSS */
 body, html {
    margin: 0px;
    padding: 0px;
@@ -22,6 +23,7 @@ body {
    z-index: 11;
 }
 
+/* Navigation CSS */
 .nav_container { }
 
 .nav_container.horizontal {
@@ -72,6 +74,109 @@ body {
 .nav_active a:hover { background: #cccccc; color: #ffffff; }
 .nav_active a:active  { background:#cccccc; color:#ffffff; }
 
+/* Project Navigation CSS */
+.project_thumb {
+   float: left;
+   margin: 0 35px 5px 0;
+   position: relative;
+   text-align: center;
+}
+
+.project_thumb .hover {
+   cursor: pointer;
+   text-decoration: none;
+}
+
+.project_thumb .nohover {
+   text-decoration: none;
+}
+
+.project_thumb .hover .cardimgcrop {
+   border: 5px solid #dddddd;
+}
+
+.project_thumb .hover .thumb_title span {
+   text-decoration: underline;
+}
+
+.project_thumb.active .cardimgcrop {
+   border: 5px solid #dddddd;
+}
+
+.project_thumb.active .thumb_title span {
+   text-decoration: underline;
+}
+
+.cardimgcrop {
+   border: 5px solid transparent;
+   margin: -5px -5px 6px -5px;
+   position: relative;
+   min-width: 200px;
+   min-height: 134px;
+}
+
+.cardimgcrop.notitle_notag {
+   margin-bottom: 22px;
+}
+   
+.loader_holder {
+   display: none;
+   position: absolute;
+   text-align: center;
+   top: 8px; left: 8px;
+   z-index: 3;
+}
+
+.thumb_title {
+   overflow: hidden;
+   white-space:nowrap;
+   text-align: center;
+   width: 200px;
+}
+
+.thumb_title.notag {
+   margin: 0 0 22px 0;
+}
+
+.thumb_title .text {
+   color: #000000;
+   font-size: 11px;
+   font-weight: bold;
+   line-height: 15px;
+   overflow: hidden;
+   padding: 2px 3px 2px 3px;
+   white-space: nowrap;
+   text-align: center;
+}
+
+.thumb_tag {
+   color: #999999;
+   height: 3em;
+   line-height: 15px;
+   margin: 0 0 2px 0;
+   overflow: hidden;
+   text-align: center;
+   width: 200px;
+}
+
+.thumb_tag.notitle {
+   margin-top: 5px;
+}
+
+.thumb_tag a {
+   color: #999999;
+   font-family: Georgia, Times, serif;
+   font-size: 11px;
+   line-height: 1.5em;
+   text-align: center;
+   text-decoration: none;
+}
+
+.thumb_tag a:hover {
+   text-decoration: underline;
+}
+
+/* Container CSS */
 #content_container {
    clear: both;
    margin: 0 auto 0 auto;
@@ -89,3 +194,9 @@ body {
 #text_container a { color: #000000; text-decoration: underline; }
 #text_container a:hover { background: #ffff66; color: #000000; text-decoration: none; }
 #text_container a:active { background: #000000; color: #ffffff; }
+
+#container_bottom {
+   clear: both;
+   border-bottom: 1px solid #cccccc;
+   margin: 15px 30px 0 0;
+}

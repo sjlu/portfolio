@@ -26,6 +26,7 @@ class Pages extends CI_Controller
       $this->load->view("include/header");
       $this->load->view("include/menu");
       $this->load->view("pages", $data);
+      $this->load->view("include/projects_menu");
       $this->load->view("include/footer");
    }
 }
