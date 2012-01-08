@@ -55,6 +55,24 @@ This is a directory that contains HTML files that will automatically be included
 
 For example if you have `/content/pages/about.html` will have a link on your site as **About**. `/content/pages/index.html` is a required page or will not render.
 
+### Adding projects
+`/content/projects/`
+
+This directory will need to contain other directories named by your project name, like `/content/projects/Some_Project`
+
+- This directory must contain `index.html` which will be parsed into the page itself.
+- You can have a thumbnail to load `thumb.png` which should be 200x134 pixels.
+- Photos will also load into the page, as long as they have `.png` at the end.
+
+A sample directory would be:
+
+    [Some_Project] => (loads name as "Some Project")
+        [thumb.png] (loads into the menu)
+        [index.html] (loads into the page when someone selects that project)
+        [photo1.png]
+        [photo2.png]
+        [photo3.png]
+
 ### Modifying the styles
 
 All you need to do is modify `style.css` to change any of the colors or anything else. Modify `/application/view/` files to change anything else you want, the code is well commented.

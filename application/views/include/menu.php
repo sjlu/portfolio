@@ -9,7 +9,7 @@
    <div class="<?= ($active['controller'] == 'pages' && $active['variable'] == 'index')  ? 'nav_active' : 'page_link' ?>"><a href="<?= base_url() ?>">Home</a></div>
    <?php foreach(get_pages() as $page): ?>
       <div class="<?=  ($active['controller'] == 'pages' && $active['variable'] == $page['filename'])  ? 'nav_active' : 'page_link' ?>">
-         <a href="<?= site_url() ?>/pages/view/<?= $page['filename'] ?>"><?= $page['title'] ?></a>
+         <a href="<?= site_url('/pages/view/'.$page['filename']) ?>"><?= $page['title'] ?></a>
       </div>
    <?php endforeach; ?>
    

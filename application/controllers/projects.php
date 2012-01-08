@@ -8,13 +8,21 @@ class Projects extends CI_Controller
       $this->load->model('projects_model');
    }
 
-	public function index()
-	{
-	   $this->view('index');
-   }
-
    public function view($page)
    {
-      // view should go here
+      $data = array();
+      $data['name'] = $this->projects_model->get_project_name($page); 
+      
+      if ($data['name'] === FALSE)
+         show_404();
+
+      $data['text'] = $this->projects_model->get_project_text($page);
+      $data['photos'] = $this->projects_model->get_project_photos($page);
+
+      $this->load->view("include/header");
+      $this->load->view("include/menu");
+      $this->load->view("projects", $data);
+      $this->load->view("include/projects_menu");
+      $this->load->view("include/footer");
    }
 }

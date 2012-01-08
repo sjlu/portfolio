@@ -115,10 +115,6 @@ body {
    min-height: 134px;
 }
 
-.cardimgcrop.notitle_notag {
-   margin-bottom: 22px;
-}
-   
 .loader_holder {
    display: none;
    position: absolute;
@@ -132,9 +128,6 @@ body {
    white-space:nowrap;
    text-align: center;
    width: 200px;
-}
-
-.thumb_title.notag {
    margin: 0 0 22px 0;
 }
 
@@ -157,10 +150,6 @@ body {
    overflow: hidden;
    text-align: center;
    width: 200px;
-}
-
-.thumb_tag.notitle {
-   margin-top: 5px;
 }
 
 .thumb_tag a {
@@ -198,5 +187,5 @@ body {
 #container_bottom {
    clear: both;
    border-bottom: 1px solid #cccccc;
-   margin: 15px 30px 0 0;
+   margin: 0 35px 10px 0;
 }
