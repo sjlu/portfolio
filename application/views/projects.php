@@ -6,11 +6,22 @@
 
    <script type="text/javascript">
       $(document).ready(function(){
-         $('#photos_container').bxSlider({
+         var slider = $('#photos_container').bxSlider({
             auto: true,
             controls: false
          });
+      
+         $('#slider_control_left').click(function(){
+            slider.goToPreviousSlide();
+            return false;
+         });
+
+         $('#slider_control_right').click(function(){
+            slider.goToNextSlide();
+            return false;
+         });
       });
+
    </script>
 
    <?php if (count($photos) != 0): ?>
