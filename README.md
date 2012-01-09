@@ -10,7 +10,7 @@ Documentation
 
 Requirements
 ------------
-Any proper web server that runs PHP 5 or greater.
+Any proper web server that can run PHP5 and CodeIgniter can run this portfolio website.
 
 Installation
 ------------

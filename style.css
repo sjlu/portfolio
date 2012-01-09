@@ -228,3 +228,9 @@ body {
    max-width: 260px;
    max-height: 600px;
 }
+
+/* Footer CSS */
+#footer_text {
+	float: right;
+	padding-right: 80px;
+}
