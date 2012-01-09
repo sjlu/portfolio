@@ -176,9 +176,15 @@ body {
 }
 
 #text_container {
+   margin-left: 8px;
    color: #555555;
    width: 560px;
 }
+
+#text_container h1 {
+   font-size: 22px;
+   margin: 0;
+} 
 
 #text_container a { color: #000000; text-decoration: underline; }
 #text_container a:hover { background: #ffff66; color: #000000; text-decoration: none; }
@@ -188,4 +194,35 @@ body {
    clear: both;
    border-bottom: 1px solid #cccccc;
    margin: 0 35px 10px 0;
+}
+
+#photos_container {
+   margin-top: 20px;
+   margin-left: 8px;
+   width: 800px;
+}
+
+#slider_control_left {
+   background: url('images/icon_arrow_left.png') no-repeat 0 -31px;
+   height: 31px;
+   width: 31px;
+}
+
+#slider_control_left:hover {
+   background-position: 0 0;
+}
+
+#slider_control_right {
+   background: url('images/icon_arrow_right.png') no-repeat 0 -31px;
+   height: 31px;
+   width: 31px;
+}
+
+#slider_control_right:hover {
+   background-position: 0 0;
+}
+
+#photos_container img {
+   max-width: 260px;
+   max-height: 600px;
 }

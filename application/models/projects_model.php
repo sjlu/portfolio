@@ -40,6 +40,7 @@ class Projects_model extends CI_Model
             unset($dir_list[$key]);
       }
 
+      sort($dir_list);
       return $dir_list;
    }
 }
