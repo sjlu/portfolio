@@ -19,6 +19,7 @@ class Projects extends CI_Controller
 
       $data['text'] = $this->projects_model->get_project_text($page);
       $data['photos'] = $this->projects_model->get_project_photos($page);
+      $data['page'] = $page;
 
       $this->load->view("include/header", $header);
       $this->load->view("include/menu");
