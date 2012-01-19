@@ -23,7 +23,12 @@ class Pages extends CI_Controller
       else if ($data['content'] === FALSE)
          show_404();
 
-      $this->load->view("include/header");
+      $header['title'] = $this->pages_model->get_page_title($page);
+      if ($page != 'index')
+         $this->load->view("include/header", $header);
+      else
+         $this->load->view("include/header");
+
       $this->load->view("include/menu");
       $this->load->view("pages", $data);
       $this->load->view("include/projects_menu");

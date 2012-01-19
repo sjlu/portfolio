@@ -7,7 +7,7 @@
    <meta name="description" content="<?= $meta['meta_desc'] ?>" />
    <meta name="keywords" content="<?= $meta['meta_keywords'] ?>" />
 
-   <title><?= $meta['title'] ?></title>
+   <title><? if(!empty($page)) echo $title.' - '; ?><?= $meta['title'] ?></title>
 
    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
    <script src="http://bxslider.com/sites/default/files/jquery.bxSlider.min.js" type="text/javascript"></script>

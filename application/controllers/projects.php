@@ -12,16 +12,15 @@ class Projects extends CI_Controller
    {
       $data = array();
       $data['name'] = $this->projects_model->get_project_name($page); 
-      
+      $header['title'] = $data['name'];     
+ 
       if ($data['name'] === FALSE)
          show_404();
 
       $data['text'] = $this->projects_model->get_project_text($page);
       $data['photos'] = $this->projects_model->get_project_photos($page);
 
-      $data['page'] = $page;
-
-      $this->load->view("include/header");
+      $this->load->view("include/header", $header);
       $this->load->view("include/menu");
       $this->load->view("projects", $data);
       $this->load->view("include/projects_menu");

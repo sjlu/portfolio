@@ -19,13 +19,14 @@ function get_pages()
 {
    $return = array();
    $dir_listing = get_filenames('./content/pages/'); // this is a code igniter function
+   sort($dir_listing);
    foreach ($dir_listing as $filename)
    {
       if ($filename == 'index.html') continue;
       $filename = str_replace(array(".html", ".htm",".txt"), "", $filename); // get rid of extensions
       $title = str_replace(array('_'), " ", $filename); // replace underscores with spaces
       $title = ucwords($title); // uppercase these words
-      
+ 
       $return[] = array('title' => $title, 'filename' => $filename);
    }
 
