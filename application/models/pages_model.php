@@ -11,7 +11,7 @@ class Pages_model extends CI_Model
    {
       if ($page == 'index') return 'Home';
 
-      $title = str_replace(array('_'), " ", $filename);
+      $title = str_replace(array('_'), " ", $page);
       $title = ucwords($title);
 
       return $title;
