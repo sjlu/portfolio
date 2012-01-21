@@ -20,8 +20,9 @@
             slider.goToNextSlide();
             return false;
          });
-      });
 
+         $("a.modal_elements").fancybox();
+      });
    </script>
 
    <?php if (count($photos) != 0): ?>
@@ -32,7 +33,9 @@
                <?php if (($c%3) == 0): ?>
                   <div>
                <?php endif; ?>   
+                  <a class="modal_elements" rel="photos" href="<?= base_url('content/projects/'.$page.'/'.$photo) ?>">   
                      <img src="<?= base_url('content/projects/'.$page.'/'.$photo) ?>" />
+                  </a>
                <?php if (($c%3) == 2 || count($photos)-1 == $c): ?>
                   </div>
                <?php endif; $c++; ?>
