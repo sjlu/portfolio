@@ -203,7 +203,7 @@ body {
 }
 
 #slider_control_left {
-   background: url('images/icon_arrow_left.png') no-repeat 0 -31px;
+   background: url('../img/icon_arrow_left.png') no-repeat 0 -31px;
    height: 31px;
    width: 31px;
    margin-right: 5px;
@@ -214,7 +214,7 @@ body {
 }
 
 #slider_control_right {
-   background: url('images/icon_arrow_right.png') no-repeat 0 -31px;
+   background: url('../img/icon_arrow_right.png') no-repeat 0 -31px;
    height: 31px;
    width: 31px;
    margin-left: 5px;

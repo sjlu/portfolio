@@ -12,6 +12,6 @@
    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
    <script src="http://bxslider.com/sites/default/files/jquery.bxSlider.min.js" type="text/javascript"></script>
 
-   <link href="<?= base_url('style.css') ?>" rel="stylesheet" type="text/css" charset="utf-8" />
+   <link href="<?= base_url('resources/css/style.css') ?>" rel="stylesheet" type="text/css" charset="utf-8" />
 </head>
 <body>
