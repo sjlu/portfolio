@@ -14,5 +14,6 @@
    <script type="text/javascript" src="<?= base_url('resources/js/jquery.fancybox-1.3.4.pack.js') ?>"></script>
 
    <link href="<?= base_url('resources/css/style.css') ?>" rel="stylesheet" type="text/css" charset="utf-8" />
+   <link href="<?= base_url('resources/css/jquery.fancybox-1.3.4.css') ?>" rel="stylesheet" type="text/css" charset="utf-8" />
 </head>
 <body>
