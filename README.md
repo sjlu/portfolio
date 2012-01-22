@@ -74,5 +74,7 @@ A sample directory would be:
         [photo3.png]
 
 ### Modifying the styles
+`/application/views/`
+`/resources/css/style.css`
 
-All you need to do is modify `style.css` to change any of the colors or anything else. Modify `/application/view/` files to change anything else you want, the code is well commented.
+This part is for more advanced users who know their way with PHP, HTML, and CSS. When viewing the files, there are specific view files that will display different content. You can change the layout by modifying the div tags and their respective CSS classes or ids. 
