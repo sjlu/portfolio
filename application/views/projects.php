@@ -1,4 +1,4 @@
-<div id="content_container">
+<div class="content_container">
    <div id="text_container">
       <h1><?= $name ?></h1>
       <?= $text ?>

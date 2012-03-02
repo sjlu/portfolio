@@ -166,7 +166,7 @@ body {
 }
 
 /* Container CSS */
-#content_container {
+.content_container {
    clear: both;
    margin: 0 auto 0 auto;
    padding: 15px 0 0 35px;

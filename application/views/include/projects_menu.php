@@ -1,10 +1,10 @@
-<div id="content_container">
+<div class="content_container">
    <div id="container_bottom"></div>
 </div>
 
 <?php $active = get_active(); ?>
 
-<div id="content_container">
+<div class="content_container">
    <?php foreach (get_projects() as $project): ?>
       <div class="project_thumb">
          <?php if ($active['controller'] == 'projects' && $active['variable'] == $project['filename']): ?>
