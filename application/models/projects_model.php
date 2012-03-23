@@ -43,5 +43,29 @@ class Projects_model extends CI_Model
       sort($dir_list);
       return $dir_list;
    }
+
+   public function get_project_thumbnail($proj)
+   {
+      $cache = 'assets/cache/projects/thumbnails/'.proj.'.png';
+
+      $dir_list = get_file_info($cache);
+      if ($dir_list === FALSE)
+      {
+         $config = array(
+            'image_library' => 'imagemagick',
+            'source_image' => './content/projects/'.$proj.'/thumb.png',
+            'new_image' => './assets/cache/projects/thumbnails/'.proj.'.png',
+            'maintain_ratio' => TRUE,
+            'height' => 134,
+            'width' => 200
+         );
+
+         $this->load->library('image_lib', $config);
+         $this->image_lib->resize();
+      }
+
+      return $cache;
+   }
+
 }
 ?>
