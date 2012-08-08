@@ -26,5 +26,7 @@ class Projects extends CI_Controller
       $this->load->view("projects", $data);
       $this->load->view("include/projects_menu");
       $this->load->view("include/footer");
+
+      $this->output->cache(1440);
    }
 }
