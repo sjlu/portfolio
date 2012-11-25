@@ -11,5 +11,9 @@
 t
    <link href="<?= base_url('resources/css/style.css') ?>" rel="stylesheet" type="text/css" charset="utf-8" />
    <link href="<?= base_url('resources/css/jquery.fancybox-1.3.4.css') ?>" rel="stylesheet" type="text/css" charset="utf-8" />
+
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+   <script type="text/javascript" src="<?= base_url('resources/js/jquery.bxslider.min.js') ?>"></script>
+   <script type="text/javascript" src="<?= base_url('resources/js/jquery.fancybox-1.3.4.pack.js') ?>"></script>
 </head>
 <body>
