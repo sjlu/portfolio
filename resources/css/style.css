@@ -82,6 +82,11 @@ body {
    text-align: center;
 }
 
+.project_thumb img {
+   width: 200px;
+   height: 134px;
+}
+
 .project_thumb .hover {
    cursor: pointer;
    text-decoration: none;
